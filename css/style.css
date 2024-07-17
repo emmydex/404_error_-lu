@@ -23,3 +23,60 @@ body {
     background-color: var(--extra-light);
     font-family: "Roboto", sans-serif;
 }
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+nav .nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text_dark);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 400px;
+    padding: 2rem;
+    margin: auto;
+    display: grid;
+    color: var(--text_dark);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.container h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.container img{
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.footer {
+    display: grid;
+    gap: 2rem;
+    place-content: baseline;
+}
+
+.footer p {
+    font-variation-settings: 1rem;
+}
