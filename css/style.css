@@ -80,3 +80,30 @@ nav .nav__logo a {
 .footer p {
     font-variation-settings: 1rem;
 }
+
+.footer button {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: var(--extra-light);
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+@media (min-width:640px) {
+    nav {
+        max-width: 1000px;
+    }
+
+    .container img {
+        max-width: 550px;
+    }
+}
