@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 
 :root {
-  --primary-color: #10e922;
+  --primary-color: #33cc33;
   --primary-color-dark: #14c117;
   --text_dark: #efebeb;
   --text-light: #767268;
-  --extra-light: #1a1919;
+  --extra-light: #02041e;
 }
 
 * {
@@ -33,7 +33,9 @@ nav {
   max-width: 400px;
   padding: 2rem;
 }
-
+button{
+  font-family: "Caveat", sans-serif";
+}
 nav .nav__logo a {
   font-size: 1.5rem;
   font-weight: 600;
@@ -48,6 +50,24 @@ nav .nav__logo a {
   display: grid;
   color: var(--text_dark);
 }
+
+.container img {
+  animation: bounce_around 3s infinite;
+  
+}
+
+@keyframes bounce_around {
+  0%{
+    transform: translateY(0px);
+  }
+  70%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
 
 .header {
   display: flex;
@@ -86,7 +106,7 @@ nav .nav__logo a {
   outline: none;
   border: none;
   border-radius: 5px;
-  color: var(--extra-light);
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--primary-color);
